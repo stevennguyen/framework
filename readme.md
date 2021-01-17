@@ -53,6 +53,9 @@ The top plate, main plate, and bottom plate, are already panelized for fabricati
 The total nominal thickness of all of these layers is 11.3 mm, but can vary slightly in the real world. Using 1.6 mm thick PCBs, the only critical dimension to maintain is the 3.5 mm total distance between the top plate and main PCB for switch mounting reasons.
 
 ## Bill of materials
+
+![](doc/board.png)
+
 Mfgr.                                   | Mfgr. part #         | Digi-Key part #        | Designator | Qty
 ----------------------------------------|----------------------|------------------------|------------|----
 On Shore Technology Inc.                | ED281DT              | ED3050-5-ND            | U1         | 1

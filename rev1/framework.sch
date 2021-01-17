@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Framework"
+Date "2021-01-17"
+Rev "1"
+Comp "7c8"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -16,62 +16,62 @@ $EndDescr
 $Comp
 L MCU_Microchip_ATmega:ATmega328P-PU U1
 U 1 1 5FB5CE5D
-P 1650 5600
-F 0 "U1" H 1250 7150 50  0000 R CNN
-F 1 "ATmega328P-PU" H 1550 7050 50  0000 R CNN
-F 2 "framework:DIP-28_W7.62mm" H 1650 5600 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1650 5600 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/microchip-technology/ATMEGA328-PU/2271026" H 1650 5600 50  0001 C CNN "DigiKey"
-	1    1650 5600
+P 3000 5350
+F 0 "U1" H 2600 6900 50  0000 R CNN
+F 1 "ATmega328P-PU" H 2900 6800 50  0000 R CNN
+F 2 "framework:DIP-28_W7.62mm" H 3000 5350 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 3000 5350 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/microchip-technology/ATMEGA328-PU/2271026" H 3000 5350 50  0001 C CNN "DigiKey"
+	1    3000 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR06
 U 1 1 5FB5F557
-P 1700 3900
-F 0 "#PWR06" H 1700 3750 50  0001 C CNN
-F 1 "+5V" H 1715 4073 50  0000 C CNN
-F 2 "" H 1700 3900 50  0001 C CNN
-F 3 "" H 1700 3900 50  0001 C CNN
-	1    1700 3900
+P 3050 3650
+F 0 "#PWR06" H 3050 3500 50  0001 C CNN
+F 1 "+5V" H 3065 3823 50  0000 C CNN
+F 2 "" H 3050 3650 50  0001 C CNN
+F 3 "" H 3050 3650 50  0001 C CNN
+	1    3050 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 4100 1700 4100
+	3000 3850 3050 3850
 Wire Wire Line
-	1700 3900 1700 4100
-Connection ~ 1700 4100
+	3050 3650 3050 3850
+Connection ~ 3050 3850
 Wire Wire Line
-	1700 4100 1750 4100
+	3050 3850 3100 3850
 $Comp
 L power:GND #PWR03
 U 1 1 5FB67534
-P 1650 7250
-F 0 "#PWR03" H 1650 7000 50  0001 C CNN
-F 1 "GND" H 1655 7077 50  0001 C CNN
-F 2 "" H 1650 7250 50  0001 C CNN
-F 3 "" H 1650 7250 50  0001 C CNN
-	1    1650 7250
+P 3000 7000
+F 0 "#PWR03" H 3000 6750 50  0001 C CNN
+F 1 "GND" H 3005 6827 50  0001 C CNN
+F 2 "" H 3000 7000 50  0001 C CNN
+F 3 "" H 3000 7000 50  0001 C CNN
+	1    3000 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 7100 1650 7250
+	3000 6850 3000 7000
 $Comp
 L Device:Crystal Y1
 U 1 1 5FB70426
-P 3000 5150
-F 0 "Y1" H 3000 5450 50  0000 C CNN
-F 1 "16M" H 3000 5350 50  0000 C CNN
-F 2 "framework:Crystal_HC49-4H_Vertical" H 3000 5150 50  0001 C CNN
-F 3 "~" H 3000 5150 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/fox-electronics/FC4STCBMF16-0-BAG200/1024700" H 3000 5150 50  0001 C CNN "DigiKey"
-	1    3000 5150
+P 4350 4900
+F 0 "Y1" H 4350 5200 50  0000 C CNN
+F 1 "16M" H 4350 5100 50  0000 C CNN
+F 2 "framework:Crystal_HC49-4H_Vertical" H 4350 4900 50  0001 C CNN
+F 3 "~" H 4350 4900 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/fox-electronics/FC4STCBMF16-0-BAG200/1024700" H 4350 4900 50  0001 C CNN "DigiKey"
+	1    4350 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 5150 2850 5100
+	4200 4900 4200 4850
 Wire Wire Line
-	3150 5150 3150 5000
+	4500 4900 4500 4750
 $Comp
 L Switch:SW_Push_45deg SW3
 U 1 1 5FB7FEBB
@@ -1835,45 +1835,45 @@ $EndComp
 $Comp
 L Device:C_Small C4
 U 1 1 5FDC0F8C
-P 2850 5250
-F 0 "C4" H 2650 5300 50  0000 L CNN
-F 1 "22p" H 2650 5200 50  0000 L CNN
-F 2 "framework:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 2850 5250 50  0001 C CNN
-F 3 "~" H 2850 5250 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/avx-corporation/SA102A220JAA/684723" H 2850 5250 50  0001 C CNN "DigiKey"
-	1    2850 5250
+P 4200 5000
+F 0 "C4" H 4000 5050 50  0000 L CNN
+F 1 "22p" H 4000 4950 50  0000 L CNN
+F 2 "framework:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 4200 5000 50  0001 C CNN
+F 3 "~" H 4200 5000 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/avx-corporation/SA102A220JAA/684723" H 4200 5000 50  0001 C CNN "DigiKey"
+	1    4200 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C5
 U 1 1 5FDC4330
-P 3150 5250
-F 0 "C5" H 3242 5296 50  0000 L CNN
-F 1 "22p" H 3242 5205 50  0000 L CNN
-F 2 "framework:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 3150 5250 50  0001 C CNN
-F 3 "~" H 3150 5250 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/avx-corporation/SA102A220JAA/684723" H 3150 5250 50  0001 C CNN "DigiKey"
-	1    3150 5250
+P 4500 5000
+F 0 "C5" H 4592 5046 50  0000 L CNN
+F 1 "22p" H 4592 4955 50  0000 L CNN
+F 2 "framework:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 4500 5000 50  0001 C CNN
+F 3 "~" H 4500 5000 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/avx-corporation/SA102A220JAA/684723" H 4500 5000 50  0001 C CNN "DigiKey"
+	1    4500 5000
 	1    0    0    -1  
 $EndComp
-Connection ~ 3150 5150
-Connection ~ 2850 5150
+Connection ~ 4500 4900
+Connection ~ 4200 4900
 $Comp
 L power:GND #PWR07
 U 1 1 5FB7D327
-P 3000 5350
-F 0 "#PWR07" H 3000 5100 50  0001 C CNN
-F 1 "GND" H 3005 5177 50  0000 C CNN
-F 2 "" H 3000 5350 50  0001 C CNN
-F 3 "" H 3000 5350 50  0001 C CNN
-	1    3000 5350
+P 4350 5100
+F 0 "#PWR07" H 4350 4850 50  0001 C CNN
+F 1 "GND" H 4355 4927 50  0000 C CNN
+F 2 "" H 4350 5100 50  0001 C CNN
+F 3 "" H 4350 5100 50  0001 C CNN
+	1    4350 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 5350 3000 5350
-Connection ~ 3000 5350
+	4200 5100 4350 5100
+Connection ~ 4350 5100
 Wire Wire Line
-	3000 5350 3150 5350
+	4350 5100 4500 5100
 Wire Wire Line
 	9200 4800 9500 4800
 Connection ~ 9200 4800
@@ -1949,17 +1949,17 @@ Wire Wire Line
 Wire Wire Line
 	1500 3250 1500 3150
 Wire Wire Line
-	2250 4900 2300 4900
+	3600 4650 3650 4650
 Wire Wire Line
-	2300 4900 2300 4850
+	3650 4650 3650 4600
 Wire Wire Line
-	2250 4800 2300 4800
+	3600 4550 3650 4550
 Wire Wire Line
-	2300 4800 2300 4750
+	3650 4550 3650 4500
 Wire Wire Line
-	2250 4700 2300 4700
+	3600 4450 3650 4450
 Wire Wire Line
-	2300 4700 2300 4650
+	3650 4450 3650 4400
 Wire Wire Line
 	10200 2000 10200 1900
 Wire Wire Line
@@ -1967,93 +1967,93 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR08
 U 1 1 5FF7D4F0
-P 3150 5800
-F 0 "#PWR08" H 3150 5650 50  0001 C CNN
-F 1 "+5V" H 3165 5973 50  0000 C CNN
-F 2 "" H 3150 5800 50  0001 C CNN
-F 3 "" H 3150 5800 50  0001 C CNN
-	1    3150 5800
+P 4500 5550
+F 0 "#PWR08" H 4500 5400 50  0001 C CNN
+F 1 "+5V" H 4515 5723 50  0000 C CNN
+F 2 "" H 4500 5550 50  0001 C CNN
+F 3 "" H 4500 5550 50  0001 C CNN
+	1    4500 5550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5FF7E7D4
-P 3150 6000
-F 0 "R1" H 3209 6046 50  0000 L CNN
-F 1 "10k" H 3209 5955 50  0000 L CNN
-F 2 "framework:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 3150 6000 50  0001 C CNN
-F 3 "~" H 3150 6000 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14FTC10K0/1683930" H 3150 6000 50  0001 C CNN "DigiKey"
-	1    3150 6000
+P 4500 5750
+F 0 "R1" H 4559 5796 50  0000 L CNN
+F 1 "10k" H 4559 5705 50  0000 L CNN
+F 2 "framework:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 4500 5750 50  0001 C CNN
+F 3 "~" H 4500 5750 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14FTC10K0/1683930" H 4500 5750 50  0001 C CNN "DigiKey"
+	1    4500 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 5800 3150 5900
+	4500 5550 4500 5650
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5FF899DB
-P 3650 6200
-F 0 "SW1" H 3650 6393 50  0000 C CNN
-F 1 "SW_Push" H 3650 6394 50  0001 C CNN
-F 2 "framework:SW_PUSH_6mm_H4.3mm" H 3650 6400 50  0001 C CNN
-F 3 "~" H 3650 6400 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/te-connectivity-alcoswitch-switches/1825910-6/1632536" H 3650 6200 50  0001 C CNN "DigiKey"
-	1    3650 6200
+P 5000 5950
+F 0 "SW1" H 5000 6143 50  0000 C CNN
+F 1 "SW_Push" H 5000 6144 50  0001 C CNN
+F 2 "framework:SW_PUSH_6mm_H4.3mm" H 5000 6150 50  0001 C CNN
+F 3 "~" H 5000 6150 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/te-connectivity-alcoswitch-switches/1825910-6/1632536" H 5000 5950 50  0001 C CNN "DigiKey"
+	1    5000 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 6200 3150 6200
+	4150 5950 4500 5950
 Wire Wire Line
-	3150 6100 3150 6200
+	4500 5850 4500 5950
 $Comp
 L power:GND #PWR010
 U 1 1 5FF9AD99
-P 3850 6350
-F 0 "#PWR010" H 3850 6100 50  0001 C CNN
-F 1 "GND" H 3855 6177 50  0001 C CNN
-F 2 "" H 3850 6350 50  0001 C CNN
-F 3 "" H 3850 6350 50  0001 C CNN
-	1    3850 6350
+P 5200 6100
+F 0 "#PWR010" H 5200 5850 50  0001 C CNN
+F 1 "GND" H 5205 5927 50  0001 C CNN
+F 2 "" H 5200 6100 50  0001 C CNN
+F 3 "" H 5200 6100 50  0001 C CNN
+	1    5200 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 6200 3850 6350
+	5200 5950 5200 6100
 Wire Wire Line
-	3150 6200 3450 6200
-Connection ~ 3150 6200
+	4500 5950 4800 5950
+Connection ~ 4500 5950
 Wire Wire Line
-	2250 6300 2350 6300
+	3600 6050 3700 6050
 Wire Wire Line
-	2250 6400 2350 6400
+	3600 6150 3700 6150
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5FFC91A2
-P 3650 6550
-F 0 "SW2" H 3650 6743 50  0000 C CNN
-F 1 "SW_Push" H 3650 6744 50  0001 C CNN
-F 2 "framework:SW_PUSH_6mm_H4.3mm" H 3650 6750 50  0001 C CNN
-F 3 "~" H 3650 6750 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/te-connectivity-alcoswitch-switches/1825910-6/1632536" H 3650 6550 50  0001 C CNN "DigiKey"
-	1    3650 6550
+P 5000 6300
+F 0 "SW2" H 5000 6493 50  0000 C CNN
+F 1 "SW_Push" H 5000 6494 50  0001 C CNN
+F 2 "framework:SW_PUSH_6mm_H4.3mm" H 5000 6500 50  0001 C CNN
+F 3 "~" H 5000 6500 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/te-connectivity-alcoswitch-switches/1825910-6/1632536" H 5000 6300 50  0001 C CNN "DigiKey"
+	1    5000 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 5FFD58A5
-P 3850 6700
-F 0 "#PWR011" H 3850 6450 50  0001 C CNN
-F 1 "GND" H 3855 6527 50  0001 C CNN
-F 2 "" H 3850 6700 50  0001 C CNN
-F 3 "" H 3850 6700 50  0001 C CNN
-	1    3850 6700
+P 5200 6450
+F 0 "#PWR011" H 5200 6200 50  0001 C CNN
+F 1 "GND" H 5205 6277 50  0001 C CNN
+F 2 "" H 5200 6450 50  0001 C CNN
+F 3 "" H 5200 6450 50  0001 C CNN
+	1    5200 6450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 6550 3850 6700
+	5200 6300 5200 6450
 Wire Wire Line
-	2850 5100 2250 5100
+	4200 4850 3600 4850
 Wire Wire Line
-	3150 5000 2250 5000
+	4500 4750 3600 4750
 $Comp
 L Device:C_Small C3
 U 1 1 5FEF1A83
@@ -2067,266 +2067,266 @@ F 4 "https://www.digikey.ca/en/products/detail/vishay-beyschlag-draloric-bc-comp
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 6200 2350 6200
+	3600 5950 3700 5950
 Wire Wire Line
-	2250 6100 2350 6100
+	3600 5850 3700 5850
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J2
 U 1 1 5FDB4259
-P 4000 2000
-F 0 "J2" H 4107 2775 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 4107 2776 50  0001 C CNN
-F 2 "framework:USB_C_Receptacle_GCT_USB4085" H 4150 2000 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4150 2000 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/gct/USB4085-GF-A/9859662" H 4000 2000 50  0001 C CNN "DigiKey"
-	1    4000 2000
+P 3900 2000
+F 0 "J2" H 4007 2775 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 4007 2776 50  0001 C CNN
+F 2 "framework:USB_C_Receptacle_GCT_USB4085" H 4050 2000 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4050 2000 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/gct/USB4085-GF-A/9859662" H 3900 2000 50  0001 C CNN "DigiKey"
+	1    3900 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5FDB425F
-P 3850 3000
-F 0 "#PWR09" H 3850 2750 50  0001 C CNN
-F 1 "GND" H 3855 2827 50  0000 C CNN
-F 2 "" H 3850 3000 50  0001 C CNN
-F 3 "" H 3850 3000 50  0001 C CNN
-	1    3850 3000
+P 3750 3000
+F 0 "#PWR09" H 3750 2750 50  0001 C CNN
+F 1 "GND" H 3755 2827 50  0000 C CNN
+F 2 "" H 3750 3000 50  0001 C CNN
+F 3 "" H 3750 3000 50  0001 C CNN
+	1    3750 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 2900 3850 2900
+	3600 2900 3750 2900
 Wire Wire Line
-	3850 2900 3850 3000
-Connection ~ 3850 2900
+	3750 2900 3750 3000
+Connection ~ 3750 2900
 Wire Wire Line
-	3850 2900 4000 2900
+	3750 2900 3900 2900
 $Comp
 L Device:R_Small R2
 U 1 1 5FDB426A
-P 5150 1950
-F 0 "R2" V 4950 1950 50  0000 C CNN
-F 1 "75" V 5050 1950 50  0000 C CNN
-F 2 "framework:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5150 1950 50  0001 C CNN
-F 3 "~" H 5150 1950 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14FTC75R0/1683943" V 5150 1950 50  0001 C CNN "DigiKey"
-	1    5150 1950
+P 5050 1950
+F 0 "R2" V 4850 1950 50  0000 C CNN
+F 1 "75" V 4950 1950 50  0000 C CNN
+F 2 "framework:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5050 1950 50  0001 C CNN
+F 3 "~" H 5050 1950 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14FTC75R0/1683943" V 5050 1950 50  0001 C CNN "DigiKey"
+	1    5050 1950
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R3
 U 1 1 5FDB4271
-P 5150 2150
-F 0 "R3" V 5250 2150 50  0000 C CNN
-F 1 "75" V 5350 2150 50  0000 C CNN
-F 2 "framework:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5150 2150 50  0001 C CNN
-F 3 "~" H 5150 2150 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14FTC75R0/1683943" H 5150 2150 50  0001 C CNN "DigiKey"
-	1    5150 2150
+P 5050 2150
+F 0 "R3" V 5150 2150 50  0000 C CNN
+F 1 "75" V 5250 2150 50  0000 C CNN
+F 2 "framework:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5050 2150 50  0001 C CNN
+F 3 "~" H 5050 2150 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14FTC75R0/1683943" H 5050 2150 50  0001 C CNN "DigiKey"
+	1    5050 2150
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:D_Schottky_Small D1
 U 1 1 5FDB4278
-P 4700 2800
-F 0 "D1" V 4654 2868 50  0000 L CNN
-F 1 "3v6" V 4745 2868 50  0000 L CNN
-F 2 "framework:D_DO-35_SOD27_P7.62mm_Horizontal" V 4700 2800 50  0001 C CNN
-F 3 "~" V 4700 2800 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/on-semiconductor/BZX79C3V6/977916" V 4700 2800 50  0001 C CNN "DigiKey"
-	1    4700 2800
+P 4600 2800
+F 0 "D1" V 4554 2868 50  0000 L CNN
+F 1 "3v6" V 4645 2868 50  0000 L CNN
+F 2 "framework:D_DO-35_SOD27_P7.62mm_Horizontal" V 4600 2800 50  0001 C CNN
+F 3 "~" V 4600 2800 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/on-semiconductor/BZX79C3V6/977916" V 4600 2800 50  0001 C CNN "DigiKey"
+	1    4600 2800
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:D_Schottky_Small D2
 U 1 1 5FDB427F
-P 5000 2800
-F 0 "D2" V 4954 2868 50  0000 L CNN
-F 1 "3v6" V 5045 2868 50  0000 L CNN
-F 2 "framework:D_DO-35_SOD27_P7.62mm_Horizontal" V 5000 2800 50  0001 C CNN
-F 3 "~" V 5000 2800 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/on-semiconductor/BZX79C3V6/977916" V 5000 2800 50  0001 C CNN "DigiKey"
-	1    5000 2800
+P 4900 2800
+F 0 "D2" V 4854 2868 50  0000 L CNN
+F 1 "3v6" V 4945 2868 50  0000 L CNN
+F 2 "framework:D_DO-35_SOD27_P7.62mm_Horizontal" V 4900 2800 50  0001 C CNN
+F 3 "~" V 4900 2800 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/on-semiconductor/BZX79C3V6/977916" V 4900 2800 50  0001 C CNN "DigiKey"
+	1    4900 2800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4600 2100 4600 2150
+	4500 2100 4500 2150
 Wire Wire Line
-	4600 1900 4600 1950
+	4500 1900 4500 1950
+Connection ~ 4500 2150
+Wire Wire Line
+	4500 2150 4500 2200
+Connection ~ 4500 1950
+Wire Wire Line
+	4500 1950 4500 2000
+Wire Wire Line
+	4500 2150 4600 2150
+Wire Wire Line
+	4500 1950 4900 1950
+Wire Wire Line
+	4600 2700 4600 2150
 Connection ~ 4600 2150
 Wire Wire Line
-	4600 2150 4600 2200
-Connection ~ 4600 1950
+	4900 2700 4900 1950
+Connection ~ 4900 1950
 Wire Wire Line
-	4600 1950 4600 2000
-Wire Wire Line
-	4600 2150 4700 2150
-Wire Wire Line
-	4600 1950 5000 1950
-Wire Wire Line
-	4700 2700 4700 2150
-Connection ~ 4700 2150
-Wire Wire Line
-	5000 2700 5000 1950
-Connection ~ 5000 1950
-Wire Wire Line
-	5000 1950 5050 1950
+	4900 1950 4950 1950
 $Comp
 L power:GND #PWR013
 U 1 1 5FDB4292
-P 4850 3000
-F 0 "#PWR013" H 4850 2750 50  0001 C CNN
-F 1 "GND" H 4855 2827 50  0000 C CNN
-F 2 "" H 4850 3000 50  0001 C CNN
-F 3 "" H 4850 3000 50  0001 C CNN
-	1    4850 3000
+P 4750 3000
+F 0 "#PWR013" H 4750 2750 50  0001 C CNN
+F 1 "GND" H 4755 2827 50  0000 C CNN
+F 2 "" H 4750 3000 50  0001 C CNN
+F 3 "" H 4750 3000 50  0001 C CNN
+	1    4750 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 2900 4850 2900
+	4600 2900 4750 2900
 Wire Wire Line
-	4850 3000 4850 2900
-Connection ~ 4850 2900
+	4750 3000 4750 2900
+Connection ~ 4750 2900
 Wire Wire Line
-	4850 2900 5000 2900
+	4750 2900 4900 2900
 Wire Wire Line
-	5250 2150 5350 2150
+	5150 2150 5250 2150
 Wire Wire Line
-	5250 1950 5300 1950
+	5150 1950 5200 1950
 $Comp
 L power:+5V #PWR012
 U 1 1 5FDB42A0
-P 4600 1150
-F 0 "#PWR012" H 4600 1000 50  0001 C CNN
-F 1 "+5V" H 4615 1323 50  0000 C CNN
-F 2 "" H 4600 1150 50  0001 C CNN
-F 3 "" H 4600 1150 50  0001 C CNN
-	1    4600 1150
+P 4500 1150
+F 0 "#PWR012" H 4500 1000 50  0001 C CNN
+F 1 "+5V" H 4515 1323 50  0000 C CNN
+F 2 "" H 4500 1150 50  0001 C CNN
+F 3 "" H 4500 1150 50  0001 C CNN
+	1    4500 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5FDB42A7
-P 5700 2050
-F 0 "R5" H 5641 2004 50  0000 R CNN
-F 1 "5k1" H 5641 2095 50  0000 R CNN
-F 2 "framework:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5700 2050 50  0001 C CNN
-F 3 "~" H 5700 2050 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14FAD5K10/9770241" H 5700 2050 50  0001 C CNN "DigiKey"
-	1    5700 2050
+P 5600 2050
+F 0 "R5" H 5541 2004 50  0000 R CNN
+F 1 "5k1" H 5541 2095 50  0000 R CNN
+F 2 "framework:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5600 2050 50  0001 C CNN
+F 3 "~" H 5600 2050 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14FAD5K10/9770241" H 5600 2050 50  0001 C CNN "DigiKey"
+	1    5600 2050
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R6
 U 1 1 5FDB42AE
-P 6000 2050
-F 0 "R6" H 5941 2004 50  0000 R CNN
-F 1 "5k1" H 5941 2095 50  0000 R CNN
-F 2 "framework:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6000 2050 50  0001 C CNN
-F 3 "~" H 6000 2050 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14FAD5K10/9770241" H 6000 2050 50  0001 C CNN "DigiKey"
-	1    6000 2050
+P 5900 2050
+F 0 "R6" H 5841 2004 50  0000 R CNN
+F 1 "5k1" H 5841 2095 50  0000 R CNN
+F 2 "framework:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5900 2050 50  0001 C CNN
+F 3 "~" H 5900 2050 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14FAD5K10/9770241" H 5900 2050 50  0001 C CNN "DigiKey"
+	1    5900 2050
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 5FDB42B4
-P 5850 3000
-F 0 "#PWR014" H 5850 2750 50  0001 C CNN
-F 1 "GND" H 5855 2827 50  0000 C CNN
-F 2 "" H 5850 3000 50  0001 C CNN
-F 3 "" H 5850 3000 50  0001 C CNN
-	1    5850 3000
+P 5750 3000
+F 0 "#PWR014" H 5750 2750 50  0001 C CNN
+F 1 "GND" H 5755 2827 50  0000 C CNN
+F 2 "" H 5750 3000 50  0001 C CNN
+F 3 "" H 5750 3000 50  0001 C CNN
+	1    5750 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 2150 5700 2500
+	5600 2150 5600 2500
 Wire Wire Line
-	5700 2500 5850 2500
+	5600 2500 5750 2500
 Wire Wire Line
-	6000 2500 6000 2150
+	5900 2500 5900 2150
 Wire Wire Line
-	5850 2500 5850 3000
-Connection ~ 5850 2500
+	5750 2500 5750 3000
+Connection ~ 5750 2500
 Wire Wire Line
-	5850 2500 6000 2500
+	5750 2500 5900 2500
 Wire Wire Line
-	5700 1950 5700 1700
+	5600 1950 5600 1700
 Wire Wire Line
-	5700 1700 4600 1700
+	5600 1700 4500 1700
 Wire Wire Line
-	6000 1950 6000 1600
+	5900 1950 5900 1600
 Wire Wire Line
-	6000 1600 4600 1600
+	5900 1600 4500 1600
 $Comp
 L Device:R_Small R4
 U 1 1 5FDB42C5
-P 5300 1350
-F 0 "R4" H 5241 1304 50  0000 R CNN
-F 1 "1k5" H 5241 1395 50  0000 R CNN
-F 2 "framework:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5300 1350 50  0001 C CNN
-F 3 "~" H 5300 1350 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNF14FTD1K50/1709705" H 5300 1350 50  0001 C CNN "DigiKey"
-	1    5300 1350
+P 5200 1350
+F 0 "R4" H 5141 1304 50  0000 R CNN
+F 1 "1k5" H 5141 1395 50  0000 R CNN
+F 2 "framework:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5200 1350 50  0001 C CNN
+F 3 "~" H 5200 1350 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNF14FTD1K50/1709705" H 5200 1350 50  0001 C CNN "DigiKey"
+	1    5200 1350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4700 2150 5050 2150
+	4600 2150 4950 2150
 Wire Wire Line
-	4600 1400 4600 1200
+	4500 1400 4500 1200
 Wire Wire Line
-	5300 1250 5300 1200
+	5200 1250 5200 1200
 Wire Wire Line
-	5300 1200 4600 1200
-Connection ~ 4600 1200
+	5200 1200 4500 1200
+Connection ~ 4500 1200
 Wire Wire Line
-	4600 1200 4600 1150
+	4500 1200 4500 1150
 Wire Wire Line
-	5300 1450 5300 1950
-Connection ~ 5300 1950
+	5200 1450 5200 1950
+Connection ~ 5200 1950
 Wire Wire Line
-	5300 1950 5350 1950
+	5200 1950 5250 1950
 Wire Wire Line
-	2250 4400 2350 4400
+	3600 4150 3700 4150
 Wire Wire Line
-	2250 6800 2350 6800
+	3600 6550 3700 6550
 Wire Wire Line
-	2250 6700 2350 6700
+	3600 6450 3700 6450
 Wire Wire Line
-	2250 6500 2350 6500
+	3600 6250 3700 6250
 Wire Wire Line
-	2250 6600 2300 6600
+	3600 6350 3650 6350
 Wire Wire Line
-	2300 6550 2300 6600
+	3650 6300 3650 6350
 Wire Wire Line
-	2300 6550 3450 6550
-Connection ~ 2300 6600
+	3650 6300 4800 6300
+Connection ~ 3650 6350
 Wire Wire Line
-	2300 6600 2350 6600
+	3650 6350 3700 6350
 Wire Wire Line
-	2350 4500 2250 4500
+	3700 4250 3600 4250
 Wire Wire Line
-	2350 4600 2250 4600
+	3700 4350 3600 4350
 Wire Wire Line
-	2350 4700 2300 4700
-Connection ~ 2300 4700
+	3700 4450 3650 4450
+Connection ~ 3650 4450
 Wire Wire Line
-	2350 4800 2300 4800
-Connection ~ 2300 4800
+	3700 4550 3650 4550
+Connection ~ 3650 4550
 Wire Wire Line
-	2350 4900 2300 4900
-Connection ~ 2300 4900
+	3700 4650 3650 4650
+Connection ~ 3650 4650
 Wire Wire Line
-	2350 5800 2250 5800
+	3700 5550 3600 5550
 Wire Wire Line
-	2350 5700 2250 5700
+	3700 5450 3600 5450
 Wire Wire Line
-	2350 5600 2250 5600
+	3700 5350 3600 5350
 Wire Wire Line
-	2350 5500 2250 5500
+	3700 5250 3600 5250
 Wire Wire Line
-	2350 5400 2250 5400
+	3700 5150 3600 5150
 Wire Wire Line
-	2350 5300 2250 5300
+	3700 5050 3600 5050
 Wire Wire Line
 	10200 1900 10650 1900
 Wire Wire Line
@@ -2375,75 +2375,75 @@ Text GLabel 6950 3500 0    50   Input ~ 0
 r4
 Text GLabel 6950 3900 0    50   Input ~ 0
 r5
-Text GLabel 2350 4400 2    50   Input ~ 0
+Text GLabel 3700 4150 2    50   Input ~ 0
 r0
-Text GLabel 2350 4500 2    50   Input ~ 0
+Text GLabel 3700 4250 2    50   Input ~ 0
 r1
-Text GLabel 2350 4600 2    50   Input ~ 0
+Text GLabel 3700 4350 2    50   Input ~ 0
 r3
-Text GLabel 2350 4700 2    50   Input ~ 0
+Text GLabel 3700 4450 2    50   Input ~ 0
 r5
-Text GLabel 2350 4800 2    50   Input ~ 0
+Text GLabel 3700 4550 2    50   Input ~ 0
 r7
-Text GLabel 2350 4900 2    50   Input ~ 0
+Text GLabel 3700 4650 2    50   Input ~ 0
 r9
-Text GLabel 2350 5300 2    50   Input ~ 0
+Text GLabel 3700 5050 2    50   Input ~ 0
 c0
-Text GLabel 2350 5400 2    50   Input ~ 0
+Text GLabel 3700 5150 2    50   Input ~ 0
 c1
-Text GLabel 2350 5500 2    50   Input ~ 0
+Text GLabel 3700 5250 2    50   Input ~ 0
 c2
-Text GLabel 2350 5600 2    50   Input ~ 0
+Text GLabel 3700 5350 2    50   Input ~ 0
 c3
-Text GLabel 2350 5700 2    50   Input ~ 0
+Text GLabel 3700 5450 2    50   Input ~ 0
 c4
-Text GLabel 2350 5800 2    50   Input ~ 0
+Text GLabel 3700 5550 2    50   Input ~ 0
 c5
-Text GLabel 2350 6500 2    50   Input ~ 0
+Text GLabel 3700 6250 2    50   Input ~ 0
 r8
-Text GLabel 2350 6600 2    50   Input ~ 0
+Text GLabel 3700 6350 2    50   Input ~ 0
 r6
-Text GLabel 2350 6700 2    50   Input ~ 0
+Text GLabel 3700 6450 2    50   Input ~ 0
 r4
-Text GLabel 2350 6800 2    50   Input ~ 0
+Text GLabel 3700 6550 2    50   Input ~ 0
 r2
 Text GLabel 10650 2300 2    50   Input ~ 0
 ea
 Text GLabel 10650 1900 2    50   Input ~ 0
 eb
-Text GLabel 2350 6100 2    50   Input ~ 0
+Text GLabel 3700 5850 2    50   Input ~ 0
 ea
-Text GLabel 2350 6200 2    50   Input ~ 0
+Text GLabel 3700 5950 2    50   Input ~ 0
 eb
-Text GLabel 2350 6300 2    50   Input ~ 0
+Text GLabel 3700 6050 2    50   Input ~ 0
 d+
-Text GLabel 2350 6400 2    50   Input ~ 0
+Text GLabel 3700 6150 2    50   Input ~ 0
 d-
-Text GLabel 2550 4750 2    50   Input ~ 0
+Text GLabel 3900 4500 2    50   Input ~ 0
 miso
-Text GLabel 2550 4650 2    50   Input ~ 0
+Text GLabel 3900 4400 2    50   Input ~ 0
 mosi
-Text GLabel 2550 4850 2    50   Input ~ 0
+Text GLabel 3900 4600 2    50   Input ~ 0
 sck
 Wire Wire Line
-	2300 4650 2550 4650
+	3650 4400 3900 4400
 Wire Wire Line
-	2300 4750 2550 4750
+	3650 4500 3900 4500
 Wire Wire Line
-	2300 4850 2550 4850
-Text GLabel 2350 5900 2    50   Input ~ 0
+	3650 4600 3900 4600
+Text GLabel 3700 5650 2    50   Input ~ 0
 rst
 Wire Wire Line
-	2250 5900 2300 5900
+	3600 5650 3650 5650
 Wire Wire Line
-	2300 5900 2300 6000
+	3650 5650 3650 5750
 Wire Wire Line
-	2300 6000 2800 6000
+	3650 5750 4150 5750
 Wire Wire Line
-	2800 6000 2800 6200
-Connection ~ 2300 5900
+	4150 5750 4150 5950
+Connection ~ 3650 5650
 Wire Wire Line
-	2300 5900 2350 5900
+	3650 5650 3700 5650
 Text GLabel 2100 2650 2    50   Input ~ 0
 miso
 Text GLabel 2100 2550 2    50   Input ~ 0
@@ -2460,9 +2460,9 @@ Text GLabel 2100 2850 2    50   Input ~ 0
 rst
 Wire Wire Line
 	2000 2850 2100 2850
-Text GLabel 5350 1950 2    50   Input ~ 0
+Text GLabel 5250 1950 2    50   Input ~ 0
 d-
-Text GLabel 5350 2150 2    50   Input ~ 0
+Text GLabel 5250 2150 2    50   Input ~ 0
 d+
 Text GLabel 6950 4300 0    50   Input ~ 0
 r6
