@@ -33,6 +33,12 @@ Fuse bytes should be:
 * hfuse = 0xd0
 * efuse = 0x04
 
+### Layout
+
+Framework supports MIT, grid, and 2x2u spacebar layouts. Refer to [framework.h](qmk/7c8/framework/framework.h). Layout options are also configurable in VIA.
+
+![](doc/keyboard-layout.png)
+
 ### Construction
 
 The top plate, main plate, and bottom plate, are already panelized for fabrication and should be 1.6 mm thick PCBs. The stack up is as follows:
