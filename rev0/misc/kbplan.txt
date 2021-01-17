@@ -1,0 +1,19 @@
+1	rst	28
+2		27
+3		26
+4	d+68o	25
+5	d-68o	24
+6		23
+7	vcc	22 gnd
+8	gnd	21 .1 uF to gnd	
+9	xtl1	20 vcc
+10	xtl2	19 sck / 
+11		18 miso / 
+12		17 mosi / 
+13		16 
+14		15
+
+18 gpio
+10 row
+6 col
+2 for encodercccccc

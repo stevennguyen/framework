@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name graphics)(type KiCad)(uri //lithium/steven/Projects/Keyboards/framework/graphics)(options "")(descr ""))
+  (lib (name panelization)(type KiCad)(uri "//lithium/steven/Projects/Keyboards/# KiCAD Libraries/Panelization.pretty-master")(options "")(descr ""))
+  (lib (name framework)(type KiCad)(uri ${KIPRJMOD}/framework.pretty)(options "")(descr ""))
+)
