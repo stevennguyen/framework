@@ -37,7 +37,7 @@ Fuse bytes should be:
 
 Framework supports MIT, grid, and 2x2u spacebar layouts. Refer to [framework.h](qmk/7c8/framework/framework.h). Layout options are also configurable in VIA.
 
-![](doc/keyboard-layout.png)
+![](doc/layout.png)
 
 ### Construction
 
