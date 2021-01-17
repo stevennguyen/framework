@@ -65,8 +65,8 @@ Panasonic Electronic Components         | ECE-A1HKA4R7         | P827-ND        
 Microchip Technology                    | ATMEGA328P-PU        | ATMEGA328P-PU-ND       | U1         | 1
 Harwin Inc.                             | M20-9980345          | 952-2120-ND            | J1         | 1
 Bourns Inc.                             | PEC11R-4220F-S0024   | PEC11R-4220F-S0024-ND  | [*1]       | 1
-Kaihua Electronics Co., Ltd.            | CPG151101S11         |                        | [*2]       | 62
+Kaihua Electronics Co., Ltd.            | CPG151101S11         | [*2]                   | [*1]       | 62
 
-[*1] There is no reference designator for the rotary encoder on the board, but it should be obvious which footprint it belongs to.
+[*1] There is no reference designator for this component the board, but it should be obvious which footprint it belongs to.
 
 [*2] Digi-Key does not stock this, but it seems easy enough to find through many vendors online if you search for the part number or "kailh hotswap sockets".
