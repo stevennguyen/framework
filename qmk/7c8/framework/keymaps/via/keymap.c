@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_LOWER] = framework_via(
     _______, _______, _______, _______, _______, _______, _______, _______,   _______, KC_MINS, KC_EQL,  _______,
-    KC_LEAD, KC_F1,   KC_F2,   KC_F3,   KC_F4,   _______, _______, _______,   _______, KC_LBRC, KC_RBRC, KC_BSLS,
+    _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   _______, _______, _______,   _______, KC_LBRC, KC_RBRC, KC_BSLS,
     KC_DEL,  KC_F5,   KC_F6,   KC_F7,   KC_F8,   _______, _______, _______,   _______, _______, _______, _______,
     _______, KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______, _______, _______,   _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, MO(_BOTH), KC_HOME, KC_PGDN, KC_PGUP, KC_END,
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 void encoder_update_user(uint8_t index, bool clockwise) {
-    uint8_t layer = biton32(layer_state);
+    uint8_t layer = get_highest_layer(layer_state);
     if (index == 0) {
         if (clockwise) {
             tap_code16(dynamic_keymap_get_keycode(layer, 10, 1));

@@ -17,12 +17,11 @@
 #pragma once
 #include "config_common.h"
 
-#define VENDOR_ID 0x07c8
+#define VENDOR_ID 0x77c8
 #define PRODUCT_ID 0x0001
 #define DEVICE_VER 0x0000
 #define MANUFACTURER 7c8
 #define PRODUCT Framework
-#define DESCRIPTION 5x12 ortholinear with a knob
 
 #define MATRIX_ROWS 10
 #define MATRIX_COLS 6
@@ -34,7 +33,6 @@
 
 #define ENCODER_RESOLUTION 4
 #define TAP_CODE_DELAY 16
-#define UNUSED_PINS
 #define DIODE_DIRECTION COL2ROW
 #define DEBOUNCE 5
 
