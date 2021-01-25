@@ -31,7 +31,7 @@ The ATmega328P does not come with a USB bootloader from factory. You will need t
 Fuse bytes should be:
 * lfuse = 0xd7
 * hfuse = 0xd0
-* efuse = 0x04
+* efuse = 0xfc
 
 ### Layout
 
