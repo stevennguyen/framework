@@ -3,5 +3,4 @@
 ![](3.jpg)
 ![](4.jpg)
 ![](5.jpg)
-![](front.png)
-![](back.png)
+![](top.svg)
