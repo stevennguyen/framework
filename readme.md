@@ -43,12 +43,16 @@ Framework supports MIT, grid, and 2x2u spacebar layouts. Refer to [framework.h](
 
 The top plate, main plate, and bottom plate, are already panelized for fabrication and should be 1.6 mm thick PCBs. The stack up is as follows:
 
+* **Acrylic shield** - 1.5 mm [framework-acrylic-shield.dxf](rev1/acrylic/dxf/framework-acrylic-shield.dxf)
+* **Threaded spacers** - 10 mm
 * **Top plate** - 1.6 mm
 * **Silicone** - 0.5 mm - [framework-acrylic-grid.dxf](rev1/acrylic/dxf/framework-acrylic-grid.dxf)
 * **Acrylic** - 3.0 mm - [framework-acrylic-grid.dxf](rev1/acrylic/dxf/framework-acrylic-grid.dxf)
 * **Main PCB** - 1.6 mm
 * **Acrylic** - 3.0 mm - [framework-acrylic-base.dxf](rev1/acrylic/dxf/framework-acrylic-base.dxf)
 * **Bottom plate** - 1.6 mm
+
+All fastener hardware and spacers are M2.
 
 The total nominal thickness of all of these layers is 11.3 mm, but can vary slightly in the real world. Using 1.6 mm thick PCBs, the only critical dimension to maintain is the 3.5 mm total distance between the top plate and main PCB for switch mounting reasons.
 
