@@ -33,6 +33,13 @@ Fuse bytes should be:
 * hfuse = 0xd0
 * efuse = 0xfc
 
+After [setting up your QMK environment](https://beta.docs.qmk.fm/tutorial/newbs_getting_started), flash the Framework firmware:
+
+```
+make 7c8/framework:default:flash # default keymap
+make 7c8/framework:via:flash     # via-compatible keymap
+```
+
 ### Layout
 
 Framework supports MIT, grid, and 2x2u spacebar layouts. Refer to [framework.h](qmk/7c8/framework/framework.h). Layout options are also configurable in VIA.
