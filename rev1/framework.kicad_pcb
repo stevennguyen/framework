@@ -566,7 +566,7 @@
   )
 
   (module framework:7c8 (layer B.Cu) (tedit 601F594E) (tstamp 601FDD30)
-    (at 112.982375 456.390375 180)
+    (at 122.301085 446.834515 180)
     (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
