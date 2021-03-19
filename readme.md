@@ -1,4 +1,4 @@
-# 7c8 Framework
+# 7C8 Framework
 ![](images/1.jpg)
 
 Framework is a 5x12 ortholinear keyboard featuring:
