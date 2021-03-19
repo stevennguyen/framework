@@ -40,6 +40,12 @@ make 7c8/framework:default:flash # default keymap
 make 7c8/framework:via:flash     # via-compatible keymap
 ```
 
+Alternatively, a precompiled .hex with bootloader and Framework QMK firmware with VIA support can be found at [firmware/bl_framework_via.hex](firmware/bl_framework_via.hex). Flashing/fusing with avrdude looks like this:
+
+```
+avrdude -c <programmer> -p atmega328p -U flash:w:bl_framework_via.hex:i -U lfuse:w:0xd7:m -U hfuse:w:0xd0:m -U efuse:w:0xfc:m
+```
+
 ### Layout
 
 Framework supports MIT, grid, and 2x2u spacebar layouts. Refer to [framework.h](qmk/7c8/framework/framework.h). Layout options are also configurable in VIA.
