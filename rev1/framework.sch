@@ -2125,19 +2125,7 @@ F 4 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNMF14F
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D_Schottky_Small D1
-U 1 1 5FDB4278
-P 4600 2800
-F 0 "D1" V 4554 2868 50  0000 L CNN
-F 1 "3v6" V 4645 2868 50  0000 L CNN
-F 2 "framework:D_DO-35_SOD27_P7.62mm_Horizontal" V 4600 2800 50  0001 C CNN
-F 3 "~" V 4600 2800 50  0001 C CNN
-F 4 "https://www.digikey.ca/en/products/detail/on-semiconductor/BZX79C3V6/977916" V 4600 2800 50  0001 C CNN "DigiKey"
-	1    4600 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Schottky_Small D2
+L Device:D_Zener_Small D2
 U 1 1 5FDB427F
 P 4900 2800
 F 0 "D2" V 4854 2868 50  0000 L CNN
@@ -2508,4 +2496,16 @@ Wire Wire Line
 Wire Wire Line
 	6700 5400 7400 5400
 Connection ~ 7400 5400
+$Comp
+L Device:D_Zener_Small D1
+U 1 1 5FDB4278
+P 4600 2800
+F 0 "D1" V 4554 2868 50  0000 L CNN
+F 1 "3v6" V 4645 2868 50  0000 L CNN
+F 2 "framework:D_DO-35_SOD27_P7.62mm_Horizontal" V 4600 2800 50  0001 C CNN
+F 3 "~" V 4600 2800 50  0001 C CNN
+F 4 "https://www.digikey.ca/en/products/detail/on-semiconductor/BZX79C3V6/977916" V 4600 2800 50  0001 C CNN "DigiKey"
+	1    4600 2800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

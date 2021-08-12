@@ -2444,9 +2444,9 @@ Wire Wire Line
 Connection ~ 3650 5650
 Wire Wire Line
 	3650 5650 3700 5650
-Text GLabel 2100 2650 2    50   Input ~ 0
-miso
 Text GLabel 2100 2550 2    50   Input ~ 0
+miso
+Text GLabel 2100 2650 2    50   Input ~ 0
 mosi
 Text GLabel 2100 2750 2    50   Input ~ 0
 sck
