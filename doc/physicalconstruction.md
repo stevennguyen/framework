@@ -21,13 +21,13 @@ There is a 1.0 mm silicone layer that sits between the keyswitch plate and middl
 If you choose to omit this piece, the middle acrylic layer will now need to be 3.5 mm thick to make up for the missing silicone. Additionally, the layer thicknesses are not strict, but there should be 3.5 mm between keyswitch plate and main PCB for switches to mount properly.
 
 ## Layers
-- **Acrylic shield** - 1.5 mm [framework-acrylic-shield.dxf](rev1/acrylic/dxf/framework-acrylic-shield.dxf) (for component section)
+- **Acrylic shield** - 1.5 mm [framework-acrylic-shield.dxf](/rev1/acrylic/dxf/framework-acrylic-shield.dxf) (for component section)
 - **Threaded spacers** - 10 mm (for component section)
 - **Top plate** - 1.6 mm
-- **Silicone** - 1.0 mm - [framework-acrylic-grid.dxf](rev1/acrylic/dxf/framework-acrylic-grid.dxf)
-- **Middle acrylic** - 2.5 mm - [framework-acrylic-grid.dxf](rev1/acrylic/dxf/framework-acrylic-grid.dxf)
+- **Silicone** - 1.0 mm - [framework-acrylic-grid.dxf](/rev1/acrylic/dxf/framework-acrylic-grid.dxf)
+- **Middle acrylic** - 2.5 mm - [framework-acrylic-grid.dxf](/rev1/acrylic/dxf/framework-acrylic-grid.dxf)
 - **Main PCB** - 1.6 mm
-- **Bottom acrylic** - 2.0 mm - [framework-acrylic-base.dxf](rev1/acrylic/dxf/framework-acrylic-base.dxf)
+- **Bottom acrylic** - 2.0 mm - [framework-acrylic-base.dxf](/rev1/acrylic/dxf/framework-acrylic-base.dxf)
 - **Bottom plate** - 1.6 mm
 
 The total nominal thickness of all of these layers is 10.3 mm (excluding acrylic shield), but can vary slightly in the real world. Using 1.6 mm thick PCBs, the only critical dimension to maintain is the 3.5 mm total distance (1.0mm silicone + 2.5 mm acrylic) between the top plate and main PCB for switch mounting reasons.
