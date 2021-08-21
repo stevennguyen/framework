@@ -13,6 +13,10 @@ Framework is a 5x12 ortholinear keyboard featuring:
 
 ## Info
 
+### Discord
+
+https://discord.gg/MpxnD9PygN
+
 ### License
 
 Framework is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Please modify my design to make a keyboard that fits you!
