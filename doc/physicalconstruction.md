@@ -1,3 +1,5 @@
+![](e1.jpg)
+
 # Physical construction
 ## Panels
 The top plate, main PCB, and back plate are all panelized as one piece.
