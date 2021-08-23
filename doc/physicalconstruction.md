@@ -1,4 +1,4 @@
-![](e1.jpg)
+![](e1.png)
 
 # Physical construction
 ## Panels
