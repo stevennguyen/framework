@@ -71,7 +71,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (grid_origin 217.551485 332.534035)
+    (grid_origin 102.060375 467.883625)
     (visible_elements 7FFFFF7F)
     (pcbplotparams
       (layerselection 0x010f0_ffffffff)
@@ -10142,7 +10142,7 @@
   )
 
   (module MountingHole:MountingHole_2.2mm_M2 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5FF1A548)
-    (at 217.551 467.502375)
+    (at 217.551 467.883625)
     (descr "Mounting Hole 2.2mm, no annular, M2")
     (tags "mounting hole 2.2mm no annular m2")
     (clearance 1)
