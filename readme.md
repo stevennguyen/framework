@@ -58,4 +58,4 @@ Framework supports MIT, grid, and 2x2u spacebar layouts. Refer to [framework.h](
 
 ### Physical construction
 
-Please see [this separate note on physical construction](doc/physicalconstruction.md).
+Please see [this separate note on physical construction](doc/physical_construction.md).
