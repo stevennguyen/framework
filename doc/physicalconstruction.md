@@ -61,25 +61,25 @@ The rotary encoder knob should be for a 6 mm d-shaft. The biggest knob diameter 
 ## Bill of materials (electrical)
 Obviously, the exact part does not matter, as long as it is functionally the same and has the same footprint. This is just an example BOM. Please reference the KiCAD project for component details.
 
-Mfgr.                                   | Mfgr. part #         | Digi-Key part #        | Designator | Qty
-----------------------------------------|----------------------|------------------------|------------|----
-On Shore Technology Inc.                | ED281DT              | ED3050-5-ND            | U1         | 1
-Vishay Beyschlag/Draloric/BC Components | A104K15X7RF5TAA      | 1109PHCT-ND            | C2, C3     | 2
-AVX Corporation                         | SA102A220JAA         | 478-2426-1-ND          | C4, C5     | 2
-ON Semiconductor                        | BZX79C3V6            | BZX79C3V6-ND           | D1, D2     | 2
-ON Semiconductor                        | 1N4148               | 1N4148FS-ND            | D3 - D62   | 60
-GCT                                     | USB4085-GF-A         | 2073-USB4085-GF-ACT-ND | J2         | 1
-Stackpole Electronics Inc               | RNMF14FTC10K0        | S10KCACT-ND            | R1         | 1
-Stackpole Electronics Inc               | RNMF14FTC75R0        | S75CACT-ND             | R2, R3     | 2
-Stackpole Electronics Inc               | RNF14FTD1K50         | RNF14FTD1K50CT-ND      | R4         | 1
-Stackpole Electronics Inc               | RNMF14FAD5K10        | RNMF14FAD5K10CT-ND     | R5, R6     | 2
-TE Connectivity ALCOSWITCH Switches     | 1825910-6            | 450-1650-ND            | SW1, SW2   | 2
-Fox Electronics                         | FC4STCBMF16.0-BAG200 | 631-1108-ND            | Y1         | 1
-Panasonic Electronic Components         | ECE-A1HKA4R7         | P827-ND                | C1         | 1
-Microchip Technology                    | ATMEGA328P-PU        | ATMEGA328P-PU-ND       | U1         | 1
-Harwin Inc.                             | M20-9980345          | 952-2120-ND            | J1         | 1
-Bourns Inc.                             | PEC11R-4220F-S0024   | PEC11R-4220F-S0024-ND  | [*1]       | 1
-Kaihua Electronics Co., Ltd.            | CPG151101S11         | [*2]                   | [*1]       | 62
+Mfgr.                                   | Mfgr. part #         | Digi-Key part #        | Designator | Qty | Standard Name
+----------------------------------------|----------------------|------------------------|------------|-----|---------------------------
+On Shore Technology Inc.                | ED281DT              | ED3050-5-ND            | U1         | 1   | DIP IC Socket 28-Pin 0.3"
+Vishay Beyschlag/Draloric/BC Components | A104K15X7RF5TAA      | 1109PHCT-ND            | C2, C3     | 2   | Ceramic Capacitor, 0.1uF 50v
+AVX Corporation                         | SA102A220JAA         | 478-2426-1-ND          | C4, C5     | 2   | Ceramic Capacitor, 22pF 200v
+ON Semiconductor                        | BZX79C3V6            | BZX79C3V6-ND           | D1, D2     | 2   | Zener Diode, 500mW 3.6V DO35
+ON Semiconductor                        | 1N4148               | 1N4148FS-ND            | D3 - D62   | 60  | Diode, 1N4148 100V 200mA
+GCT                                     | USB4085-GF-A         | 2073-USB4085-GF-ACT-ND | J2         | 1   | USB 2.0 Type C Receptacle
+Stackpole Electronics Inc               | RNMF14FTC10K0        | S10KCACT-ND            | R1         | 1   | Resistor, 10 kOhms
+Stackpole Electronics Inc               | RNMF14FTC75R0        | S75CACT-ND             | R2, R3     | 2   | Resistor, 75 Ohms
+Stackpole Electronics Inc               | RNF14FTD1K50         | RNF14FTD1K50CT-ND      | R4         | 1   | Resistor, 1.5 kOhms
+Stackpole Electronics Inc               | RNMF14FAD5K10        | RNMF14FAD5K10CT-ND     | R5, R6     | 2   | Resistor, 5.1 kOhms
+TE Connectivity ALCOSWITCH Switches     | 1825910-6            | 450-1650-ND            | SW1, SW2   | 2   | 6x6x1 4-pin Push Button
+Fox Electronics                         | FC4STCBMF16.0-BAG200 | 631-1108-ND            | Y1         | 1   | 16 MHz Crystal Oscillator
+Panasonic Electronic Components         | ECE-A1HKA4R7         | P827-ND                | C1         | 1   | Electrolytic Capacitor, 4.7uF 50V
+Microchip Technology                    | ATMEGA328P-PU        | ATMEGA328P-PU-ND       | U1         | 1   | ATMega328P-PU
+Harwin Inc.                             | M20-9980345          | 952-2120-ND            | J1         | 1   | 6-pin Header Connector
+Bourns Inc.                             | PEC11R-4220F-S0024   | PEC11R-4220F-S0024-ND  | [*1]       | 1   | Rotary Encoder
+Kaihua Electronics Co., Ltd.            | CPG151101S11         | [*2]                   | [*1]       | 62  | Hotswap Sockets
 
 [*1] There is no reference designator for this component the board, but it should be obvious which footprint it belongs to.
 
