@@ -52,7 +52,7 @@ avrdude -c <programmer> -p atmega328p -U flash:w:bl_framework_via.hex:i -U lfuse
 
 ### Layout
 
-Framework supports MIT, grid, and 2x2u spacebar layouts. Refer to [framework.h](qmk/7c8/framework/framework.h). Layout options are also configurable in VIA.
+Framework supports MIT, grid, and 2x2u spacebar layouts. Refer to [framework.h](https://github.com/qmk/qmk_firmware/blob/master/keyboards/7c8/framework/framework.h). Layout options are also configurable in VIA.
 
 ![](doc/layout.png)
 
