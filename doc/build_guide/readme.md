@@ -143,6 +143,8 @@ It's not necessary to trim the leads after soldering.
 ![](images/step14.jpg)
 **Warning: this is very tricky to solder due to the fine pitch! Please take care in soldering this connector.**
 
+Please refer to this [video](https://youtu.be/fXujFUUJmBg?t=171) as an example.
+
 Solder one mounting tab first and ensure that the connector is flat on the board and aligned straight. After its orientation looks correct, solder the other three mounting legs.
 
 Use a generous amount of flux on the pins. Apply a little bit of solder to your soldering iron and "dab" the solder onto each individual pin. You can also drag your tinned soldering iron tip across the pins. Carefully inspect the solder joints to make sure there are no solder bridges. If there are any solder bridges, go back and reflow the solder joints to clear any potential short circuits. 
