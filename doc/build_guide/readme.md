@@ -81,6 +81,9 @@ Rotary encoder knob                  | ![](images/components/knob.jpg)   |
 21. [Install switches and keycaps](#step21)
 
 ## Assembly
+
+Note: Please take care to make sure pins are straight (especially on the microcontroller and USB C connector) and that components are soldered flush and evenly on the board.
+
 ### Step 1: Depanelize plates and PCB <a name="step1"></a>
 ![](images/step1.jpg)
 Snap off the individual panels by hand. You'll want to use pliers to break off the little tabs, then sand/file them flush with the panel/PCB.
@@ -105,7 +108,7 @@ Install and solder **D1 and D2** zener diodes. These components are **polar** an
 
 ### Step 5: Solder D3 to D62 (diodes) <a name="step5"></a>
 ![](images/step5.jpg)
-Install and solder the switch matrix diodes **D3 to D54**. You can install these in banks of five (or all at once if you desire). These components are **polar** and the **black band on the zener diode should match the band on the silkscreen footprint**.
+Install and solder the switch matrix diodes **D3 to D54**. You can install these in banks of five (or all at once if you desire). These components are **polar** and the **black band on the diodes should match the band on the silkscreen footprint**.
 
 ### Step 6: Solder C2, C3 (0.1 uF capacitors) <a name="step6"></a>
 ![](images/step6.jpg)
