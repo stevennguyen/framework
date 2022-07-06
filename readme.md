@@ -35,7 +35,7 @@ The ATmega328P does not come with a USB bootloader from factory. You will need t
 Fuse bytes should be:
 * lfuse = 0xd7
 * hfuse = 0xd0
-* efuse = 0xfc
+* efuse = 0x04
 
 After [setting up your QMK environment](https://beta.docs.qmk.fm/tutorial/newbs_getting_started), flash the Framework firmware:
 
@@ -47,7 +47,7 @@ make 7c8/framework:via:flash     # via-compatible keymap
 Alternatively, a precompiled .hex with bootloader and Framework QMK firmware with VIA support can be found at [firmware/bl_framework_via.hex](firmware/bl_framework_via.hex). Flashing/fusing with avrdude looks like this:
 
 ```
-avrdude -c <programmer> -p atmega328p -U flash:w:bl_framework_via.hex:i -U lfuse:w:0xd7:m -U hfuse:w:0xd0:m -U efuse:w:0xfc:m
+avrdude -c <programmer> -p atmega328p -U flash:w:bl_framework_via.hex:i -U lfuse:w:0xd7:m -U hfuse:w:0xd0:m -U efuse:w:0x04:m
 ```
 
 ### Layout
