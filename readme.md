@@ -37,7 +37,7 @@ Fuse bytes should be:
 * hfuse = 0xd0
 * efuse = 0x04
 
-After [setting up your QMK environment](https://beta.docs.qmk.fm/tutorial/newbs_getting_started), flash the Framework firmware:
+After [setting up your QMK environment](https://docs.qmk.fm/#/newbs_getting_started), flash the Framework firmware:
 
 ```
 make 7c8/framework:default:flash # default keymap
